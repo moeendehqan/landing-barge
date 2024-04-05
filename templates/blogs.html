@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>برگه | نرم افزار سامانه مودیان</title>
+    {% include '_head.html' %}
+</head>
+<body class="overflow-x-hidden antialiased">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T36VV8P4"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
+
+  {% include '_header.html' %}
+
+  
+
+  
+<div class="bg-white py-24 sm:py-32 mt-16 mx-10" dir="rtl">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-1xl lg:mx-0 w-full text-center"> <!-- اصلاح در این خط -->
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl items-center">اخبار و مقالات</h2>
+      <p class="mt-2 text-lg leading-8 text-gray-600">مخزن اخبار، مقالات و نکات اموزشی در رابطه با امور مالیاتی کسب و کار ها.</p>
+    </div>
+    <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+      {% for item in lst %}
+      <article class="flex max-w-xl flex-col items-start justify-between">
+        <div class="group relative">
+          <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+            <a href="/blog/{{item.route}}">
+              {{item.title}}
+            </a>
+          </h3>
+          <img class="w-80 h-auto rounded-lg mt-6 mb-6" src="{{ url_for('static', filename='img/' + item.image) }}" alt="{{item.title}}"/>
+          <div class="flex items-center gap-x-4 text-xs">
+            <time datetime="2020-03-16" class="text-gray-500">{{item.date}}</time>
+            <p class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">{{item.category}}</p>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+    {% include '_footer.html' %}
+
+    <!-- a little JS for the mobile nav button -->
+
+</body>
+</html>

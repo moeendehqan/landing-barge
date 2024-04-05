@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>برگه | نرم افزار سامانه مودیان</title>
+    {% include '_head.html' %}
+</head>
+<body class="overflow-x-hidden antialiased">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T36VV8P4"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
+  {% include '_header.html' %}
+
+
+
+
+  <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 relative" dir="rtl">
+    <div
+      class="bg-cover bg-center text-center overflow-hidden"
+      style="
+        min-height: 500px;
+      "
+    >
+    <img src="{{ url_for('static', filename='img/' + dic.image) }}" alt="{{dic.title}}"/>
+  
+  </div>
+    {% include 'blogs/' + dic.content %}
+
+  </div>
+  <!-- End Blog Body -->
+
+
+
+
+  {% include '_footer.html' %}
+
+    <!-- a little JS for the mobile nav button -->
+
+</body>
+</html>

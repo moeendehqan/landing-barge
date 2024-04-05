@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'p';
+    src: url('IRAN.ttf');
+}
+
+
+*{
+    font-family: 'p';
+}
