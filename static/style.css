@@ -7,3 +7,13 @@
 *{
     font-family: 'p';
 }
+
+
+/* فرم تماس با ما دکمه ی بازنویسی  */
+.bg-custom-color {
+    background-color: #F44F2E; /* رنگ دلخواه شما */
+}
+
+.hover\:bg-custom-color-hover:hover {
+    background-color: #EB6131; /* رنگ دلخواه شما برای حالت hover */
+}
