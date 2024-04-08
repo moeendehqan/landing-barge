@@ -40,7 +40,7 @@ def sitemap():
     lastmod = ET.SubElement(page, "lastmod")
     lastmod.text = '2024-04-06'
     changefreq = ET.SubElement(page, "changefreq")
-    changefreq.text = 'never'
+    changefreq.text = 'weekly'
     priority = ET.SubElement(page, "priority")
     priority.text = '1'
     #blogs
@@ -50,7 +50,7 @@ def sitemap():
     lastmod = ET.SubElement(page, "lastmod")
     lastmod.text = '2024-04-06'
     changefreq = ET.SubElement(page, "changefreq")
-    changefreq.text = 'week'
+    changefreq.text = 'weekly'
     priority = ET.SubElement(page, "priority")
     priority.text = '0.75'
     for url in lst:
@@ -60,7 +60,7 @@ def sitemap():
         lastmod = ET.SubElement(page, "lastmod")
         lastmod.text = url['date']
         changefreq = ET.SubElement(page, "changefreq")
-        changefreq.text = 'never'
+        changefreq.text = 'monthly'
         priority = ET.SubElement(page, "priority")
         priority.text = '0.5'
     sitemap_xml = ET.tostring(root, encoding='utf-8')
