@@ -68,5 +68,5 @@ def sitemap():
     return sitemap_xml, {'Content-Type': 'application/xml; charset=utf-8'}
 
 if __name__ == '__main__':
-    run_simple('0.0.0.0', 8443, app, use_reloader=False, threaded=True)
-    # app.run(debug=True, host='0.0.0.0' , port=8443)
+    # run_simple('0.0.0.0', 8443, app, use_reloader=False, threaded=True)
+    app.run(debug=True, host='0.0.0.0' , port=8443)

@@ -1,50 +1,47 @@
 @font-face {
-    font-family: 'p';
-    src: url('IRAN.ttf');
+  font-family: "p";
+  src: url("IRAN.ttf");
 }
 
-
-*{
-    font-family: 'p';
+* {
+  font-family: "p";
 }
-
 
 /* فرم تماس با ما دکمه ی بازنویسی  */
 .bg-custom-color {
-    background-color: #F44F2E; /* رنگ دلخواه شما */
+  background-color: #f44f2e; /* رنگ دلخواه شما */
 }
 
 .hover\:bg-custom-color-hover:hover {
-    background-color: #EB6131; /* رنگ دلخواه شما برای حالت hover */
+  background-color: #eb6131; /* رنگ دلخواه شما برای حالت hover */
 }
-
-
 
 /* کد CSS برای ریسپانسیو سازی */
 .text-4xl {
-    font-size: 2rem; /* مثال: تغییر اندازه فونت برای تلفن همراه */
+  font-size: 2rem; /* مثال: تغییر اندازه فونت برای تلفن همراه */
 }
 .text-xl {
-    font-size: 1rem; /* مثال: تغییر اندازه فونت برای تلفن همراه */
+  font-size: 1rem; /* مثال: تغییر اندازه فونت برای تلفن همراه */
 }
 .text-gray-900 {
-    color: #333; /* مثال: تغییر رنگ متن برای تلفن همراه */
+  color: #333; /* مثال: تغییر رنگ متن برای تلفن همراه */
 }
 .text-gray-300 {
-    color: #ddd; /* مثال: تغییر رنگ متن برای تلفن همراه */
+  color: #ddd; /* مثال: تغییر رنگ متن برای تلفن همراه */
 }
 .font-extrabold {
-    font-weight: 700; /* مثال: تغییر وزن فونت برای تلفن همراه */
+  font-weight: 700; /* مثال: تغییر وزن فونت برای تلفن همراه */
 }
 .font-medium {
-    font-weight: 500; /* مثال: تغییر وزن فونت برای تلفن همراه */
+  font-weight: 500; /* مثال: تغییر وزن فونت برای تلفن همراه */
 }
+
 /* Media Queries */
 @media only screen and (max-width: 600px) {
-    .text-4xl {
-        font-size: 1.5rem; /* تغییر اندازه فونت برای تلفن همراه */
-    }
-    .text-xl {
-        font-size: 0.875rem; /* تغییر اندازه فونت برای تلفن همراه */
-    }
+  .text-4xl {
+    font-size: 1.5rem; /* تغییر اندازه فونت برای تلفن همراه */
+  }
+  .text-xl {
+    font-size: 0.875rem; /* تغییر اندازه فونت برای تلفن همراه */
+  }
 }
